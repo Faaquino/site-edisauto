@@ -44,7 +44,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    /* Linha 'text-fill-color: transparent;' REMOVIDA */
 }
 
 
@@ -77,11 +77,23 @@ body {
 
 /* --- Hero Section --- */
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1581299839656-22b01bdfd3b1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+    /* Define a imagem de fundo: Sua nova imagem */
+    background-image: url('https://i.postimg.cc/rsJwjgnP/Chat-GPT-Image-10-de-dez-de-2025-11-22-34.png'); 
+    
+    /* Garante que a imagem cubra toda a seção e não se repita */
     background-size: cover;
-    height: 70vh;
-    min-height: 450px;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    
+    /* Mantém a altura da seção, focando na imagem */
+    height: 100vh; 
+    min-height: 550px;
+
+    /* REMOÇÃO DO ESPAÇAMENTO INTERNO (Não é mais necessário, pois a seção estará vazia) */
+    padding-top: 0; 
+    padding-bottom: 0; 
 }
+
 
 
 /* --- Services Section --- */
@@ -91,7 +103,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    /* Linha 'text-fill-color: transparent;' REMOVIDA */
     transition: transform 0.3s ease;
 }
 
@@ -125,7 +137,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    /* Linha 'text-fill-color: transparent;' REMOVIDA */
     display: inline-block;
 }
 
