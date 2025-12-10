@@ -47,6 +47,15 @@ body {
     /* Linha 'text-fill-color: transparent;' REMOVIDA */
 }
 
+/* --- Header --- */
+header.header-transparent {
+    background-color: transparent !important;
+    position: absolute;
+    width: 100%;
+    z-index: 1000; /* High z-index to stay on top */
+}
+
+
 
 /* --- Navbar --- */
 .navbar-brand {
@@ -75,6 +84,36 @@ body {
     color: var(--color-gold-start) !important;
 }
 
+/* --- Professional Nav Links --- */
+.main-nav-links .nav-item {
+    margin: 0 0.5rem; /* Spacing between items */
+}
+
+.main-nav-links .nav-link {
+    position: relative;
+    padding-bottom: 8px; /* Space for the underline */
+    font-weight: 400; /* Normal weight */
+    letter-spacing: 0.5px;
+}
+
+.main-nav-links .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--color-gold-start);
+    transition: width 0.35s ease-in-out;
+}
+
+.main-nav-links .nav-link:hover::after,
+.main-nav-links .nav-link.active::after {
+    width: 60%; /* Underline doesn't span the whole item for a subtle look */
+}
+
+
 /* --- Hero Section --- */
 .hero-section {
     /* Define a imagem de fundo: Sua nova imagem */
@@ -82,7 +121,7 @@ body {
     
     /* Garante que a imagem cubra toda a seção e não se repita */
     background-size: cover;
-    background-position: center 30%;
+    background-position: center top;
     background-repeat: no-repeat;
     
     /* Mantém a altura da seção, focando na imagem */
