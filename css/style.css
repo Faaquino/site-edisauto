@@ -117,7 +117,7 @@ header.header-transparent {
 /* --- Hero Section --- */
 .hero-section {
     /* Define a imagem de fundo: Sua nova imagem */
-    background-image: url('https://i.postimg.cc/rsJwjgnP/Chat-GPT-Image-10-de-dez-de-2025-11-22-34.png'); 
+    background-image: url('https://i.postimg.cc/PJXs5wrh/Gemini-Generated-Image-ajcwccajcwccajcw.jpg');
     
     /* Garante que a imagem cubra toda a seção e não se repita */
     background-size: cover;
@@ -250,4 +250,42 @@ html {
 .history-image {
     border: 3px solid var(--color-gold-start);
     padding: 4px;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .hero-section {
+        background-image: url('https://i.postimg.cc/cLDdwgJ5/Chat-GPT-Image-15-de-dez-de-2025-20-17-05.png'); /* Art-directed image for mobile */
+        background-position: center center; /* Default to center for optimal composition on most mobile screens with 'cover' */
+        height: 80vh; /* Reduce height for mobile to avoid issues with browser UI */
+    }
+
+    .navbar-text {
+        margin-top: 1rem; /* Add some space above the phone numbers in collapsed menu */
+    }
+
+    /* Style for the collapsed menu when it's shown */
+    .navbar-collapse.show {
+        background-color: var(--color-dark); /* Use dark background for readability */
+        position: absolute;
+        top: 100%; /* Position below the toggler */
+        left: 0;
+        width: 100%;
+        padding: 1rem 0; /* Add some vertical padding */
+        border-top: 1px solid rgba(255, 255, 255, 0.1); /* Optional separator */
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 999; /* Ensure it's above other content */
+    }
+
+    /* Center the nav items within the collapsed menu */
+    .navbar-collapse.show .navbar-nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center horizontally */
+    }
+
+    /* Adjust the phone numbers block */
+    .navbar-collapse.show .navbar-text {
+        text-align: center !important; /* Force center align for mobile contact */
+        margin-top: 1rem;
+    }
 }
