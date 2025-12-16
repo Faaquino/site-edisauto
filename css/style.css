@@ -257,7 +257,7 @@ html {
     .hero-section {
         background-image: url('https://i.postimg.cc/cLDdwgJ5/Chat-GPT-Image-15-de-dez-de-2025-20-17-05.png'); /* Art-directed image for mobile */
         background-position: center center; /* Default to center for optimal composition on most mobile screens with 'cover' */
-        height: 80vh; /* Reduce height for mobile to avoid issues with browser UI */
+        height: 60vh; /* Reduce height to make the image appear smaller */
     }
 
     .navbar-text {
